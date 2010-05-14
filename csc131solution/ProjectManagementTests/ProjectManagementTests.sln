@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagementTests", "ProjectManagementTests.csproj", "{5E960BA9-7F7F-4044-8EFC-0C7F7D96E2AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickPM", "..\QuickPM\QuickPM.csproj", "{85CCE2AE-E9B8-4736-94DC-8AE7CC09573D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunTests", "..\RunTests\RunTests.csproj", "{560B8EC8-1D09-4982-9412-6A62478F6B10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E960BA9-7F7F-4044-8EFC-0C7F7D96E2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E960BA9-7F7F-4044-8EFC-0C7F7D96E2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E960BA9-7F7F-4044-8EFC-0C7F7D96E2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E960BA9-7F7F-4044-8EFC-0C7F7D96E2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85CCE2AE-E9B8-4736-94DC-8AE7CC09573D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85CCE2AE-E9B8-4736-94DC-8AE7CC09573D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85CCE2AE-E9B8-4736-94DC-8AE7CC09573D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85CCE2AE-E9B8-4736-94DC-8AE7CC09573D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560B8EC8-1D09-4982-9412-6A62478F6B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560B8EC8-1D09-4982-9412-6A62478F6B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560B8EC8-1D09-4982-9412-6A62478F6B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560B8EC8-1D09-4982-9412-6A62478F6B10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

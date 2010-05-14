@@ -1,0 +1,57 @@
+
+using System;
+using System.Web.Mvc;
+using System.Collections.Generic;
+
+namespace QuickPMWebsite.Controllers
+{
+
+
+	public class HomeController : Controller
+	{
+		
+		public ActionResult Index()
+        {
+            ViewData["Message"] = "This is ASP.NET MVC!";
+            return View();
+        }
+		
+		delegate QuickPM.ActiveRecord Del(QuickPM.Property p);
+		
+		public ActionResult RecentActivity(long id)
+		{					
+			long numRecords = 5;
+			if (id != -1)
+			{
+				numRecords = id;
+			}
+			
+			List<QuickPM.ActiveRecord> activity = new List<QuickPM.ActiveRecord>();
+			Del method = delegate(QuickPM.Property obj) {return (QuickPM.ActiveRecord)obj;};
+			
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.Property>(numRecords).ConvertAll<QuickPM.ActiveRecord>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.Document>(numRecords).ConvertAll<QuickPM.ActiveRecord>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.Tenant>(numRecords).ConvertAll<QuickPM.ActiveRecord>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.Deposit>(numRecords).ConvertAll<QuickPM.ActiveRecord>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.Lease>(numRecords).ConvertAll<QuickPM.ActiveRecord>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.LeaseOption>(numRecords).ConvertAll<QuickPM.ActiveRecord>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.SecurityDeposit>(numRecords).ConvertAll<object>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.InsuranceCertificate>(numRecords).ConvertAll<object>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.ServiceRequest>(numRecords).ConvertAll<object>(method));
+			activity.AddRange(QuickPM.ActiveRecord.GetRecentActivity<QuickPM.WorkOrderRequest>(numRecords).ConvertAll<object>(method));						
+			
+			activity.Sort(delegate(QuickPM.ActiveRecord r1, QuickPM.ActiveRecord r2){
+				return r1.ModifiedDate.CompareTo(r2.ModifiedDate);
+			});
+			
+			if (activity.Count > numRecords) 
+			{
+				activity.RemoveRange(activity.Count - (activity.Count - numRecords), activity.Count - numRecords);
+			}
+			
+			ViewData["Activity"] = activity;
+			ViewData["Message"] = "activity.Count:" + activity.Count.ToString();
+			return View();
+		}
+	}
+}

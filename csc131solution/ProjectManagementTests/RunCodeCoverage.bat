@@ -1,0 +1,1 @@
+NCover.Console nunit-console.exe bin\Release\ProjectManagementTests.dll

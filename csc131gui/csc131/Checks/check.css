@@ -1,0 +1,11 @@
+div#top 
+{
+    /* top */
+    /*background: url(images/gradient-vertical-2.png); */
+    border: 1px solid;
+    clear: both;
+    /*color: #fff;*/
+    font-size: 90%;
+    text-align: right;
+    margin-bottom: 10px;
+}

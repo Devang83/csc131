@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="bin\Release\ProjectManagementTests.dll" total="28" errors="0" failures="0" not-run="0" ignored="0" skipped="0" invalid="0" date="2008-08-29" time="12:00:19">
+  <environment nunit-version="2.5.0.8189" clr-version="2.0.50727.1433" os-version="Microsoft Windows NT 5.1.2600 Service Pack 2" platform="Win32NT" cwd="C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\ProjectManagementTests" machine-name="BRYAN" user="Bryan" user-domain="BRYAN" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="bin\Release\ProjectManagementTests.dll" executed="True" success="True" time="71.000" asserts="0">
+    <properties>
+      <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+    </properties>
+    <results>
+      <test-suite name="ProjectManagementTests" executed="True" success="True" time="71.000" asserts="0">
+        <properties>
+          <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+        </properties>
+        <results>
+          <test-suite name="ARRecordTests" executed="True" success="True" time="7.172" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.ARRecordTests.AppliedRents" executed="True" success="True" time="4.484" asserts="1">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.ARRecordTests.TestCreateARRecord" executed="True" success="True" time="2.672" asserts="2">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite name="BillingInfoTests" executed="True" success="True" time="2.891" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.BillingInfoTests.TestSetters" executed="True" success="True" time="2.891" asserts="8">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite name="BillingRecordTests" executed="True" success="True" time="10.266" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.BillingRecordTests.CompareBillingRecordsByStartDate" executed="True" success="True" time="2.516" asserts="3">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.BillingRecordTests.CreateBillingRecord" executed="True" success="True" time="3.000" asserts="4">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.BillingRecordTests.GetBillingRecord" executed="True" success="True" time="2.297" asserts="4">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.BillingRecordTests.MergeBillingRecords" executed="True" success="True" time="2.453" asserts="1">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite name="BillTests" executed="True" success="True" time="7.641" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.BillTests.GetBill" executed="True" success="True" time="2.203" asserts="1">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.BillTests.Save" executed="True" success="True" time="3.375" asserts="4">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.BillTests.TestCreateBill" executed="True" success="True" time="2.047" asserts="6">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite name="CheckTests" executed="True" success="True" time="9.969" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.CheckTests.AutoAppyCheck" executed="True" success="True" time="2.625" asserts="4">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.CheckTests.DeleteCheck" executed="True" success="True" time="2.109" asserts="2">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.CheckTests.MoneyInMoneyOut" executed="True" success="True" time="2.516" asserts="2">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.CheckTests.TestAddCheck" executed="True" success="True" time="2.719" asserts="6">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite name="PropertyTests" executed="True" success="True" time="32.984" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.PropertyTests.AddDocument" executed="True" success="True" time="2.391" asserts="1">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.PropertyTests.AddRentType" executed="True" success="True" time="1.547" asserts="4">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.PropertyTests.CompareProperties" executed="True" success="True" time="1.719" asserts="1">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.PropertyTests.CreateProperty" executed="True" success="True" time="1.844" asserts="6">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.PropertyTests.FindDelinquentTenants" executed="True" success="True" time="8.750" asserts="4">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.PropertyTests.GetDocumentIds" executed="True" success="True" time="6.156" asserts="5">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.PropertyTests.GetTenantIds" executed="True" success="True" time="5.156" asserts="6">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.PropertyTests.Setters" executed="True" success="True" time="5.422" asserts="0">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite name="QuickPMDatabaseTests" executed="True" success="True" time="0.000" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.QuickPMDatabaseTests.TestFormatSqlString" executed="True" success="True" time="0.000" asserts="1">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite name="QuickPMUtilTests" executed="True" success="True" time="0.016" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.QuickPMUtilTests.ConvertMonthToInt" executed="True" success="True" time="0.000" asserts="36">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.QuickPMUtilTests.ConvertMonthToString" executed="True" success="True" time="0.000" asserts="12">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.QuickPMUtilTests.formatTenantId" executed="True" success="True" time="0.000" asserts="7">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+              <test-case name="ProjectManagementTests.QuickPMUtilTests.prepad" executed="True" success="True" time="0.000" asserts="3">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite name="QuickPMVerifyTests" executed="True" success="True" time="0.000" asserts="0">
+            <properties>
+              <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+            </properties>
+            <results>
+              <test-case name="ProjectManagementTests.QuickPMVerifyTests.verifyNumberTest" executed="True" success="True" time="0.000" asserts="10">
+                <properties>
+                  <property name="_CATEGORIES" value="System.Collections.ArrayList" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

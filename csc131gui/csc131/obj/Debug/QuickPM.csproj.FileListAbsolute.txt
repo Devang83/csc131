@@ -1,0 +1,4 @@
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\QuickPM\QuickPM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\QuickPM\QuickPM\bin\QuickPM.pdb
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\QuickPM\QuickPM\obj\Debug\QuickPM.dll
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\QuickPM\QuickPM\obj\Debug\QuickPM.pdb

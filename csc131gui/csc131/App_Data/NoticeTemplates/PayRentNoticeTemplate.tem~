@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>NOTICE OF DEBT</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.3  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Charlene ">
+	<META NAME="CREATED" CONTENT="20071130;13440000">
+	<META NAME="CHANGEDBY" CONTENT="Tim">
+	<META NAME="CHANGED" CONTENT="20071130;13440000">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 8.5in 11in; margin-right: 0.73in; margin-top: 0.4in; margin-bottom: 0.25in }
+		P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 0; orphans: 0 }
+		P.western { font-family: "Arial", sans-serif; font-size: 10pt; so-language: en-US }
+		P.cjk { font-family: "Times New Roman", serif; font-size: 10pt }
+		P.ctl { font-family: "Arial", sans-serif; font-size: 10pt; so-language: ar-SA }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" DIR="LTR">
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.1in; margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<U><B>NOTICE OF DEBT</B></U></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.1in; margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P CLASS="western" STYLE="margin-left: 0.41in; margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<B><% intDays %> DAY NOTICE TO PAY RENT OR QUIT POSSESSION OF PREMISES - Pay by
+Personal or Mail Delivery</B></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.08in; margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+[COMMERCIAL TENANCY]</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.08in; margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt"><B>THIS
+<% intDays %> DAY NOTICE TO PAY RENT OR QUIT SUPERCEDES ALL PREVIOUSLY SERVED
+NOTICES TO PAY RENT OR QUIT IF ANY.</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt">This
+<% strDays %> Day Notice to Pay Rent or Quit is being served concurrently with
+a </FONT><FONT SIZE=1 STYLE="font-size: 8pt"><B><% strDays %> Day Notice to
+Pay Additional Rent or Quit</B></FONT><FONT SIZE=1 STYLE="font-size: 8pt">,
+Even if you pay the amounts specified therein, said full payment will
+not negate, cancel, discharge, withdraw, revoke or rescind the <% strDays %>
+Day Notice to Pay Rent or Quit. Even if you pay the rent specified
+within the <% strDays %>-day period, said payment will not negate, cancel,
+discharge, withdraw, revoke or rescind the <% strDays %> Day Notice to Pay
+Additional Rent or Quit. Each notice has its own responsibilities for
+your payment, and its own separate and independent consequences for
+non-payment. The landlord reserves the right to file an action for
+Unlawful Detainer for violation of any provision of any notice that
+you have violated within the designated <% strDays %>-day period.</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt"><B>THIS
+IS AN ATTEMPT TO COLLECT A DEBT; ANY INFORMATION OBTAINED WILL BE
+USED FOR THAT PURPOSE</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt">This
+notice does not waive, or relieve you of any tenancy-related duties
+or responsibilities. This notice is not intended as legal advice for
+the intended recipient. Nothing contained herein constitutes a waiver
+of the landlord's rights pursuant to Civil Code Section 1912 or CCP
+Section 1174.5</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt">As
+required by law, you are hereby notified that a negative credit
+report reflecting on your credit history may be submitted to a
+credit-reporting agency if you fall to fulfill the terms of your
+credit obligations.</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt">The
+amount of unpaid rent claimed herein is a reasonable estimate within
+the meaning of California Code of Civil Procedure Section 1161.1.
+Pursuant to California Code of Civil Procedure Section 1161.1 (c) you
+are herewith notified in advance that if the landlord accepts a
+partial payment of rent after filing a complaint for Unlawful
+Detainer that the acceptance of said partial payment of rent does not
+constitute a waiver of any rights, including the right the landlord
+may have to recover possession of the premises.</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>To: <% tenantName %>, and all other occupants, tenants and
+subtenants in possession of the tenancy premises:</B></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>Property Address:</B>
+<B><% tenantAddress %></B></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>Amount Due: <% amountDue %> </B>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=2 STYLE="font-size: 9pt"><B>ONLY
+FULL PAYMENT OF RENT WILL BE ACCEPTED!</B></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt">The
+name of the landlord/creditor to whom the debt is owed is: <% owner %> 
+Chiou</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt">Demand
+is hereby made upon you for FULL payment of the rent stated above for
+the above-described premises. You are hereby required to pay said
+rent to the Property Manager, or the Undersigned at the address
+specified below within <% strDays %> calendar days after service of this
+notice upon you; or if not so paid, to surrender and deliver
+possession of the above-described real property to the Owner,
+Landlord, or Authorized Agent within said <% strDays %> calendar days,</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt">Your
+failure to comply with the foregoing will result in legal proceedings
+being instituted against you to recover possession of said premises
+for UNLAWFUL DETAINER. Also, such proceedings could result In a
+Judgment against you for unpaid rent, costs of suit, necessary
+disbursements, damages, attorneys fee as well as STATUTORY DAMAGES
+for such UNLAWFUL DETENTION, and to declare a forfeiture of the Lease
+or Rental Agreement under which you occupy the above-described
+tenancy premises. The Landlord elects to and does declare a
+forfeiture of the Lease or Rental Agreement if the stated rent is not
+actually received within <% strDays %> (<% intDays %>) calendar days of service of this
+notice. If the &quot;fifth day&quot; fails on a weekend or court
+holiday, then you will have until the end of the next business day
+within which to deliver the &quot;amount due&quot;.</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt">Unless
+within thirty (30) days of receipt of this notice, regarding the
+&quot;amount due&quot; that is specified above, you dispute in
+writing the validity of the debt, or any portion thereof, the debt
+will be assumed to be valid by the person or entity generating this
+form. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><U>&rarr;<FONT SIZE=3><B>WARNING:</B></U></FONT><FONT SIZE=1 STYLE="font-size: 8pt">
+This does not mean that you have 30 days within which to pay the rent
+or vacate. You must still comply with the demand of this <% strDays %> Day
+Notice. Under federal law, if you notify the undersigned in writing
+within the 30-day period that the &quot;amount due,&quot; or any
+portion thereof is disputed, the undersigned will obtain and mail a
+verification of the debt to you. Also, upon your written request
+within the 30-day period, the undersigned will provide you with the
+name and address of the original creditor, if different from the
+current creditor.</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"> <U>&rarr;<FONT SIZE=3><B>WARNING:</B></U></FONT><FONT SIZE=1 STYLE="font-size: 8pt">
+This does not mean that a lawsuit under California law for Unlawful
+Detainer may not be filed against you before the end of the 30 day
+period If you fail to comply with this <% strDays %> Day Notice to Pay Rent or
+Quit If, however, you request verification of the debt and/or the
+name and address of the original creditor In writing within the 30
+day period that begins with your receipt of this notice, the law
+requires me to suspend my efforts (through litigation or otherwise)
+to collect the debt until I mail the requested information to you.</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=2 STYLE="font-size: 9pt"><B>___
+If this is checked, the current landlord creditor is the same as your
+original creditor.</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=2 STYLE="font-size: 9pt"><B>___
+If this is checked, this notice concerns a debt which was originated
+by the undersigned person or entity.</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=2 STYLE="font-size: 9pt"><B>___
+If this is checked, a Verification of Identity of Original
+Landlord/Creditor is attached hereto.</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=2 STYLE="font-size: 9pt"><B>___
+If this box is checked, a Verification of Debt is attached hereto.</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Name
+of Person or Entity to whom to mail or personally deliver the rent</B></FONT><FONT SIZE=1 STYLE="font-size: 8pt">:
+</FONT>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=2 STYLE="font-size: 9pt"><B><% owner %>, <% deliveryLocation %></B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1>Usual days
+and hours for rent to be personally delivered: </FONT><FONT SIZE=1><B>Monday
+&ndash; Friday 9:00 am &ndash; 5:00 pm</B></FONT><FONT SIZE=1>
+(Please call in advance of arrival to insure that someone is present
+to receive your payment of rent) Any person at the office may receive
+the rent &ndash; Please have the payment put in a sealed envelope;
+also make sure to ascertain the name of the person to whom you are
+handing the payment.</FONT></P>
+<P CLASS="western" STYLE="margin-left: 0.01in; margin-bottom: 0in; background: #ffffff">
+<FONT SIZE=2 STYLE="font-size: 9pt">Dated: <% date %> </FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">	</FONT></FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">X</FONT></FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"><U>__________________</U></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"><I><U>
+ &shy;&shy;_______ </U></I></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"><I>
+</I></FONT></FONT><FONT COLOR="#000000">Agent Telephone #: </FONT><FONT COLOR="#000000"><% agentTelephone %></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in">          
+                                                                     
+                                 <FONT SIZE=1 STYLE="font-size: 6pt"><B>&quot;Signature
+of &quot;Underslgned&quot; (Name of authorized independent property
+manager and/or Authorized Agent for landlord)</B></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><FONT SIZE=1 STYLE="font-size: 8pt"><B>NOTICE
+TO OCCUPANTS: As required by law. you are hereby notified that a
+negative credit report reflecting on your credit history may be</B></FONT><B>
+</B><FONT SIZE=1 STYLE="font-size: 8pt"><B>submitted to a credit
+reporting agency if you fail to fulfill the terms of your credit
+obligations</B></FONT></P>
+</BODY>
+</HTML>

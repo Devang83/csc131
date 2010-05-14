@@ -1,0 +1,51 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="QuickPMWebsite.Views.Shared.Site" Codebehind="Site.master.cs" %>
+<%@ Register TagPrefix="uc" TagName="BottomBar" Src="~/BottomBar.ascx" %> 
+<%@ Register TagPrefix="uc" TagName="TopBar" Src="~/Topbar.ascx" %> 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="../../style.css"/>
+
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/Javascript/jquery/jquery.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/Javascript/jquery/jquery.corner.js") %>"></script>
+    
+    <link type="text/css" rel="stylesheet" href="<%= ResolveClientUrl("~/Javascript/jquery/themes/redmond/ui.all.css") %>" />  
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/Javascript/jquery/ui/jquery.ui.all.js") %>"></script>
+
+
+    <link rel="stylesheet" href="<%= ResolveClientUrl("~/Css/dropshadow.css")%>"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>QuickPM</title> 
+</head>
+<body onload="onbodyload()" onunload="onbodyunload()">
+    <form name="basemasterform" id="basemasterform" runat="server">
+	 <script type="text/javascript">
+    	function callMethod(methodName, methodArgument)
+    	{    		
+    		document.getElementById("methodname").value=methodName;
+    		document.getElementById("methodargument").value=methodArgument;    		
+			document.forms[0].submit();
+    	}
+    	
+    </script>
+	<input type="hidden" name="methodname" id="methodname" value="" />
+	<input type="hidden" name="methodargument" id="methodargument" value="" />
+
+
+    <uc:TopBar ID="topbar" runat="server" />
+    
+        <asp:ContentPlaceHolder id="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>    
+    <uc:BottomBar id="BottomBar" runat="server"></uc:BottomBar>
+    </form>
+<% if(Request.Url.Port == 80) { %>
+<!-- Woopra Code Start -->
+<script type="text/javascript" src="http://static.woopra.com/js/woopra.js"></script>
+<!-- Woopra Code End -->
+<% } %>
+</body>
+</html>

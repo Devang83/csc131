@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpenseBudget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>1e987766-4117-4dfe-8187-59bd5f76fb20</Id>
+  <IsNewBudget>false</IsNewBudget>
+  <BeginPeriod>
+    <Year>2008</Year>
+    <Month>9</Month>
+  </BeginPeriod>
+  <EndPeriod>
+    <Year>2008</Year>
+    <Month>9</Month>
+  </EndPeriod>
+  <ExpenseItems />
+  <PropertyId>0</PropertyId>
+  <CreatedDate>2008-09-17T13:44:32.234375-07:00</CreatedDate>
+</ExpenseBudget>

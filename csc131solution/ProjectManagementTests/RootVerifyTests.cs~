@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using NUnit.Framework;
+
+// *****************************
+// Test all the functions in the PropertyManagement Root.Verify class.
+//
+// *****************************
+
+namespace ProjectManagementTests
+{
+    /// <summary>
+    /// All the tests for the Root.Verify class are in the following class.
+    /// </summary>
+    [TestFixture]
+    public class RootVerifyTests
+    {
+        /// <summary>
+        /// Empty.
+        /// </summary>
+        [SetUp]
+        public void Init()
+        {
+        }
+
+        /// <summary>
+        /// Test verifyNumber.
+        /// </summary>
+        [Test]
+        public void verifyNumberTest()
+        {
+            Assert.AreEqual(true, Root.Verify.VerifyNumber(""));
+            Assert.AreEqual(true,Root.Verify.VerifyNumber("0.0"));
+            Assert.AreEqual(true, Root.Verify.VerifyNumber("0"));
+            Assert.AreEqual(true, Root.Verify.VerifyNumber("-1"));
+            Assert.AreEqual(true, Root.Verify.VerifyNumber("100.0"));
+            Assert.AreEqual(false, Root.Verify.VerifyNumber("-1.01-"));
+            Assert.AreEqual(false, Root.Verify.VerifyNumber("111a122"));
+            Assert.AreEqual(false, Root.Verify.VerifyNumber("absc"));
+            Assert.AreEqual(false, Root.Verify.VerifyNumber("\'123\'"));
+            Assert.AreEqual(true, Root.Verify.VerifyNumber("123,1234"));
+        }
+    }
+}

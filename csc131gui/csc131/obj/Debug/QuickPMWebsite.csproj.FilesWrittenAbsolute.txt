@@ -1,0 +1,7 @@
+/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/bin/itextsharp.dll
+/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/bin/PDFjet.dll
+/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/bin/QuickPM.dll
+/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/obj/Debug/QuickPMWebsite.dll
+/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/obj/Debug/QuickPMWebsite.dll.mdb
+/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/bin/QuickPMWebsite.dll.mdb
+/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/bin/QuickPMWebsite.dll

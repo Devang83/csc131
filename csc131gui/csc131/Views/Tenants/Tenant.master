@@ -1,0 +1,68 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="QuickPMWebsite.Views.Tenants.Tenant" MasterPageFile="~/Views/Shared/Site.master" Codebehind="Tenant.master.cs" %>
+<%@ Register TagPrefix="uc" TagName="TenantTabs" Src="~/Tenant/TenantTabs.ascx" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <% string title = "Tenant Profile";
+    	if (ViewData["Id"] != null)
+       {
+       		long tenantId = (long)ViewData["Id"];
+           QuickPM.Tenant t = new QuickPM.Tenant(tenantId);           
+           title = "Tenant : " + t.Name + " (#" + t.TenantId + ")";
+           }
+           %> 
+    
+    <title><%= title %></title>
+    <script type="text/javascript" src="<%= ResolveUrl("~/Util.js") %>"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+	<% if (Request["TenantId"] != null || ViewData["Id"] != null)
+       {
+       		QuickPM.Tenant tenant = GetTenant();
+           long PropertyId = tenant.Property;
+           string propertyid = tenant.TenantId.Split(new char[] { '-' })[0];
+			QuickPM.Property p = new QuickPM.Property(PropertyId);           
+           string tenantNumber = tenant.TenantId.Split(new char[] { '-' })[1];            
+           QuickPM.Property property = new QuickPM.Property(tenant.Property);
+           List<string> tenantIds = property.GetTenantIds();
+           if (tenant.BeginDate > DateTime.Now || tenant.EndDate < DateTime.Now)
+           {
+           		tenantIds = property.GetAllTenantIds();
+           }
+           
+           %> 
+           <a class="plain-directory" href="<%= ResolveClientUrl("~/Tenants/TenantPage/" + tenant.Id)%>">Main Tenant Page</a>
+	&nbsp;&nbsp;
+    <b>Property</b> <a href="<%= ResolveUrl("~/Property/PropertyPage/" + PropertyId)%>"><%= p.Name %></a>
+    <b>Tenant</b>   
+    <script type="text/javascript">
+    	function newUrl(location, selectControl)
+	    {
+			var u = location.href.replace("<%= GetCurrentPageName()+ "/" + tenant.Id %>", "<%= GetCurrentPageName()+ "/" %>" + selectControl.options[selectControl.selectedIndex].value);
+			return u;
+	    }
+    </script>
+          
+    <select onchange="location.href = newUrl(location, this);">
+    	<% foreach(string tId in tenantIds) 
+    		{
+    			QuickPM.Tenant t = new QuickPM.Tenant(tId);
+    		%>
+    			<% if (t.Id == tenant.Id) { %>
+    				<option selected="selected" value="<%= t.Id %>"><%= t.Name + " (" + t.TenantId + ")" %></option>
+    			<% } else { %>
+    				<option value="<%= t.Id %>"><%= t.Name + " (" + t.TenantId + ")" %></option>
+    			<% } %>
+    	<% } %>
+    
+    </select>    
+	<br/>
+	<br/>
+	
+
+	<% } %>
+        <div class="content">
+    <asp:ContentPlaceHolder ID="ChildMainContent" runat="server"></asp:ContentPlaceHolder>     
+    </div>
+    
+</asp:Content>

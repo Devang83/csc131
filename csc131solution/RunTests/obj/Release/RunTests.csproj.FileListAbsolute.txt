@@ -1,0 +1,12 @@
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\RunTests.exe
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\RunTests.pdb
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\ProjectManagementTests.dll
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\Mono.Data.Sqlite.dll
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\QuickPM.dll
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\nunit.framework.dll
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\QuickPM.pdb
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\nunit.framework.xml
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\bin\Release\ProjectManagementTests.pdb
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\obj\Release\ResolveAssemblyReference.cache
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\obj\Release\RunTests.exe
+C:\cygwin\home\Bryan\PropertyManagement\quickpmsolution\RunTests\obj\Release\RunTests.pdb

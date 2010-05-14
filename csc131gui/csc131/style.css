@@ -1,0 +1,181 @@
+body 
+{
+    /*margin-top: 50px;*/
+    /*margin-left: 200px;*/    
+
+}
+
+.highlight
+{
+     background-color:#edf7f9;     
+}
+
+.panel
+{
+     background-color:#edf7f9;
+}
+
+p.breakhere {page-break-after: always}
+#mastercontent {	
+
+}
+
+div.float 
+{
+    float: right;
+    position: relative;
+    top: -300px;        
+}
+div.float-left 
+{
+    float: left;
+}
+
+div.float-right 
+{
+    float: right;
+}
+
+a 
+{    
+    text-decoration:none;    
+}
+
+.current-directory 
+{
+    color: Black;
+    background: CornflowerBlue;
+    font-size:larger;
+    text-decoration:none;
+    border-bottom: 1px solid ;
+    border-right: 1px solid ;
+	margin: 2px;
+	margin-left: 0px;
+	padding: 3px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+.plain-directory 
+{
+    background-color: #E0EAF1;
+	border-bottom: 1px solid #3E6D8E;
+    border-right: 1px solid #7F9FB6;
+	margin: 2px;
+	margin-left: 0px;
+	padding: 3px;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #3E6D8E;
+	text-decoration: none;
+	line-height: 1.9em;
+}
+
+.button-link
+{
+    background-color: #E0EAF1;
+	border-bottom: 1px solid #3E6D8E;
+    border-right: 1px solid #7F9FB6;
+	margin: 2px;
+	margin-left: 0px;
+	padding: 3px;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #3E6D8E;
+	text-decoration: none;
+	line-height: 1.9em;
+}
+
+
+
+a:hover 
+{
+    background: lightslategray;
+}
+
+div.header
+{
+    /*position: fixed;*/
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    background: url(images/topbar-gradient.png) 0% 0% repeat-x;
+    /*background: white;   */
+    /*height:100%;*/
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-color: rgb(200, 200, 255);
+    border-bottom-width: thin; 
+    border-bottom-style:solid;    
+    z-index: 500;
+}
+p.indent 
+{
+    padding-left: 20px;
+}
+div.header a:visited 
+{    
+    color: blue;
+}
+span#left-element 
+{
+    float: left;
+}
+span#right-element 
+{
+    float: right;      
+    text-align: right;
+}
+
+div#leftside 
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: white;   
+    height:100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-right-color: rgb(200, 200, 255);
+    border-right-width: thin; 
+    border-right-style:solid;    
+
+}
+
+ul.Topbar 
+{
+    list-style-type:none;
+}
+ul.Topbar li 
+{
+    background: white;
+    color: blue;  
+    margin-top: 10px;  
+    margin-bottom: 10px;  
+}
+ul.Topbar a:link
+{
+    color: blue;
+}
+
+ul.Topbar a { text-decoration: none}
+ul.Topbar a:hover { background-color: Silver}
+div#blue 
+{
+    color: Blue;
+}
+
+div#top 
+{
+    /* top */
+    /*background: url(images/gradient-vertical-2.png); */
+    border: 1px solid;
+    border-color: rgb(200, 200, 255);
+    clear: both;
+    /*color: #fff;*/
+    font-size: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4749810-E8ED-4C62-BCD5-2030B26AEDDF}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuickPMWebsite</RootNamespace>
+    <AssemblyName>QuickPMWebsite</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFjet, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PDFjet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Mono.Data.Sqlite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="VolunteerTracker, Version=1.0.0.5, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\csc131solution\SampleApp\bin\Debug\VolunteerTracker.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\tmp.txt" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Add\web.config" />
+    <Content Include="AppCode\web.config" />
+    <Content Include="Add\AddMenu.aspx" />
+    <Content Include="Add\AddTopBar.ascx" />
+    <Content Include="Add\SuccessfulAdd.aspx" />
+    <Content Include="AppCode\fckmail.py" />
+    <Content Include="AppCode\fckmailunix.py" />
+    <Content Include="AppCode\sendmail.py" />
+    <Content Include="BaseMaster.master" />
+    <Content Include="BottomBar.ascx" />
+    <Content Include="Login.ascx" />
+    <Content Include="login.aspx" />
+    <Content Include="PersonControl.ascx" />
+    <Content Include="style.css" />
+    <Content Include="SearchForms\web.config" />
+    <Content Include="Reports\web.config" />
+    <Content Include="ManageUsers\web.config" />
+    <Content Include="App_Data\web.config" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\PDFjet.dll" />
+    <Content Include="CalendarControl\CalendarControl.ascx" />
+    <Content Include="Css\dropdown.css" />
+    <Content Include="Css\dropshadow.css" />
+    <Content Include="images\collapse.jpg" />
+    <Content Include="images\expand.jpg" />
+    <Content Include="images\expand_blue.jpg" />
+    <Content Include="images\header.gif" />
+    <Content Include="images\header_over.gif" />
+    <Content Include="images\topbar-gradient.png" />
+    <Content Include="Javascript\dojo\AdapterRegistry.js" />
+    <Content Include="Javascript\dojo\back.js" />
+    <Content Include="Javascript\dojo\behavior.js" />
+    <Content Include="Javascript\dojo\build.txt" />
+    <Content Include="Javascript\dojo\cldr\monetary.js" />
+    <Content Include="Javascript\dojo\cldr\nls\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\de-de\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\de\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\de\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\de\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-au\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-au\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-au\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-ca\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-ca\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-gb\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-gb\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-us\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en-us\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\en\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\es-es\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\es-es\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\es\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\es\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\es\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\fr\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\fr\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\fr\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\it-it\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\it\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\it\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\it\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ja-jp\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ja\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ja\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ja\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ko-kr\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ko-kr\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ko\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ko\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\ko\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\pt-br\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\pt\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\pt\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\pt\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\zh-cn\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\zh-cn\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\zh-tw\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\zh-tw\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\zh-tw\number.js" />
+    <Content Include="Javascript\dojo\cldr\nls\zh\currency.js" />
+    <Content Include="Javascript\dojo\cldr\nls\zh\gregorian.js" />
+    <Content Include="Javascript\dojo\cldr\nls\zh\number.js" />
+    <Content Include="Javascript\dojo\cldr\supplemental.js" />
+    <Content Include="Javascript\dojo\colors.js" />
+    <Content Include="Javascript\dojo\cookie.js" />
+    <Content Include="Javascript\dojo\currency.js" />
+    <Content Include="Javascript\dojo\data\api\Identity.js" />
+    <Content Include="Javascript\dojo\data\api\Notification.js" />
+    <Content Include="Javascript\dojo\data\api\Read.js" />
+    <Content Include="Javascript\dojo\data\api\Request.js" />
+    <Content Include="Javascript\dojo\data\api\Write.js" />
+    <Content Include="Javascript\dojo\data\ItemFileReadStore.js" />
+    <Content Include="Javascript\dojo\data\ItemFileWriteStore.js" />
+    <Content Include="Javascript\dojo\data\util\filter.js" />
+    <Content Include="Javascript\dojo\data\util\simpleFetch.js" />
+    <Content Include="Javascript\dojo\data\util\sorter.js" />
+    <Content Include="Javascript\dojo\date.js" />
+    <Content Include="Javascript\dojo\date\locale.js" />
+    <Content Include="Javascript\dojo\date\stamp.js" />
+    <Content Include="Javascript\dojo\DeferredList.js" />
+    <Content Include="Javascript\dojo\dnd\autoscroll.js" />
+    <Content Include="Javascript\dojo\dnd\Avatar.js" />
+    <Content Include="Javascript\dojo\dnd\common.js" />
+    <Content Include="Javascript\dojo\dnd\Container.js" />
+    <Content Include="Javascript\dojo\dnd\Manager.js" />
+    <Content Include="Javascript\dojo\dnd\move.js" />
+    <Content Include="Javascript\dojo\dnd\Moveable.js" />
+    <Content Include="Javascript\dojo\dnd\Mover.js" />
+    <Content Include="Javascript\dojo\dnd\Selector.js" />
+    <Content Include="Javascript\dojo\dnd\Source.js" />
+    <Content Include="Javascript\dojo\dnd\TimedMoveable.js" />
+    <Content Include="Javascript\dojo\dojo.js" />
+    <Content Include="Javascript\dojo\fx.js" />
+    <Content Include="Javascript\dojo\fx\easing.js" />
+    <Content Include="Javascript\dojo\gears.js" />
+    <Content Include="Javascript\dojo\html.js" />
+    <Content Include="Javascript\dojo\i18n.js" />
+    <Content Include="Javascript\dojo\io\iframe.js" />
+    <Content Include="Javascript\dojo\io\script.js" />
+    <Content Include="Javascript\dojo\jaxer.js" />
+    <Content Include="Javascript\dojo\nls\ar\colors.js" />
+    <Content Include="Javascript\dojo\nls\ca\colors.js" />
+    <Content Include="Javascript\dojo\nls\colors.js" />
+    <Content Include="Javascript\dojo\nls\cs\colors.js" />
+    <Content Include="Javascript\dojo\nls\da\colors.js" />
+    <Content Include="Javascript\dojo\nls\de\colors.js" />
+    <Content Include="Javascript\dojo\nls\el\colors.js" />
+    <Content Include="Javascript\dojo\nls\es\colors.js" />
+    <Content Include="Javascript\dojo\nls\fi\colors.js" />
+    <Content Include="Javascript\dojo\nls\fr\colors.js" />
+    <Content Include="Javascript\dojo\nls\he\colors.js" />
+    <Content Include="Javascript\dojo\nls\hu\colors.js" />
+    <Content Include="Javascript\dojo\nls\it\colors.js" />
+    <Content Include="Javascript\dojo\nls\ja\colors.js" />
+    <Content Include="Javascript\dojo\nls\ko\colors.js" />
+    <Content Include="Javascript\dojo\nls\nb\colors.js" />
+    <Content Include="Javascript\dojo\nls\nl\colors.js" />
+    <Content Include="Javascript\dojo\nls\pl\colors.js" />
+    <Content Include="Javascript\dojo\nls\pt-pt\colors.js" />
+    <Content Include="Javascript\dojo\nls\pt\colors.js" />
+    <Content Include="Javascript\dojo\nls\ru\colors.js" />
+    <Content Include="Javascript\dojo\nls\sk\colors.js" />
+    <Content Include="Javascript\dojo\nls\sl\colors.js" />
+    <Content Include="Javascript\dojo\nls\sv\colors.js" />
+    <Content Include="Javascript\dojo\nls\th\colors.js" />
+    <Content Include="Javascript\dojo\nls\tr\colors.js" />
+    <Content Include="Javascript\dojo\nls\zh-tw\colors.js" />
+    <Content Include="Javascript\dojo\nls\zh\colors.js" />
+    <Content Include="Javascript\dojo\NodeList-fx.js" />
+    <Content Include="Javascript\dojo\NodeList-html.js" />
+    <Content Include="Javascript\dojo\number.js" />
+    <Content Include="Javascript\dojo\OpenAjax.js" />
+    <Content Include="Javascript\dojo\parser.js" />
+    <Content Include="Javascript\dojo\regexp.js" />
+    <Content Include="Javascript\dojo\resources\blank.gif" />
+    <Content Include="Javascript\dojo\resources\blank.html" />
+    <Content Include="Javascript\dojo\resources\dnd.css" />
+    <Content Include="Javascript\dojo\resources\dojo.css" />
+    <Content Include="Javascript\dojo\resources\iframe_history.html" />
+    <Content Include="Javascript\dojo\resources\images\dndCopy.png" />
+    <Content Include="Javascript\dojo\resources\images\dndMove.png" />
+    <Content Include="Javascript\dojo\resources\images\dndNoCopy.png" />
+    <Content Include="Javascript\dojo\resources\images\dndNoMove.png" />
+    <Content Include="Javascript\dojo\resources\_modules.js" />
+    <Content Include="Javascript\dojo\robot.js" />
+    <Content Include="Javascript\dojo\robotx.js" />
+    <Content Include="Javascript\dojo\rpc\JsonpService.js" />
+    <Content Include="Javascript\dojo\rpc\JsonService.js" />
+    <Content Include="Javascript\dojo\rpc\RpcService.js" />
+    <Content Include="Javascript\dojo\string.js" />
+    <Content Include="Javascript\dojo\_base.js" />
+    <Content Include="Javascript\dojo\_base\array.js" />
+    <Content Include="Javascript\dojo\_base\browser.js" />
+    <Content Include="Javascript\dojo\_base\Color.js" />
+    <Content Include="Javascript\dojo\_base\connect.js" />
+    <Content Include="Javascript\dojo\_base\declare.js" />
+    <Content Include="Javascript\dojo\_base\Deferred.js" />
+    <Content Include="Javascript\dojo\_base\event.js" />
+    <Content Include="Javascript\dojo\_base\fx.js" />
+    <Content Include="Javascript\dojo\_base\html.js" />
+    <Content Include="Javascript\dojo\_base\json.js" />
+    <Content Include="Javascript\dojo\_base\lang.js" />
+    <Content Include="Javascript\dojo\_base\NodeList.js" />
+    <Content Include="Javascript\dojo\_base\query.js" />
+    <Content Include="Javascript\dojo\_base\window.js" />
+    <Content Include="Javascript\dojo\_base\xhr.js" />
+    <Content Include="Javascript\dojo\_base\_loader\bootstrap.js" />
+    <Content Include="Javascript\dojo\_base\_loader\hostenv_browser.js" />
+    <Content Include="Javascript\dojo\_base\_loader\hostenv_rhino.js" />
+    <Content Include="Javascript\dojo\_base\_loader\hostenv_spidermonkey.js" />
+    <Content Include="Javascript\dojo\_base\_loader\loader.js" />
+    <Content Include="Javascript\dojo\_base\_loader\loader_debug.js" />
+    <Content Include="Javascript\dojo\_base\_loader\loader_xd.js" />
+    <Content Include="Javascript\dojo\_firebug\errorIcon.png" />
+    <Content Include="Javascript\dojo\_firebug\firebug.css" />
+    <Content Include="Javascript\dojo\_firebug\firebug.js" />
+    <Content Include="Javascript\dojo\_firebug\infoIcon.png" />
+    <Content Include="Javascript\dojo\_firebug\tab_lft_norm.png" />
+    <Content Include="Javascript\dojo\_firebug\tab_lft_over.png" />
+    <Content Include="Javascript\dojo\_firebug\tab_rgt_norm.png" />
+    <Content Include="Javascript\dojo\_firebug\tab_rgt_over.png" />
+    <Content Include="Javascript\dojo\_firebug\warningIcon.png" />
+    <Content Include="Javascript\dropdown.js" />
+    <Content Include="Javascript\flot\API.txt" />
+    <Content Include="Javascript\flot\examples\basic.html" />
+    <Content Include="Javascript\flot\examples\dual-axis.html" />
+    <Content Include="Javascript\flot\examples\graph-types.html" />
+    <Content Include="Javascript\flot\examples\index.html" />
+    <Content Include="Javascript\flot\examples\interacting.html" />
+    <Content Include="Javascript\flot\examples\layout.css" />
+    <Content Include="Javascript\flot\examples\selection.html" />
+    <Content Include="Javascript\flot\examples\setting-options.html" />
+    <Content Include="Javascript\flot\examples\time.html" />
+    <Content Include="Javascript\flot\examples\turning-series.html" />
+    <Content Include="Javascript\flot\examples\visitors.html" />
+    <Content Include="Javascript\flot\examples\zooming.html" />
+    <Content Include="Javascript\flot\excanvas.js" />
+    <Content Include="Javascript\flot\excanvas.pack.js" />
+    <Content Include="Javascript\flot\jquery.flot.js" />
+    <Content Include="Javascript\flot\jquery.flot.pack.js" />
+    <Content Include="Javascript\flot\jquery.js" />
+    <Content Include="Javascript\flot\NEWS.txt" />
+    <Content Include="Javascript\flot\README.txt" />
+    <Content Include="Javascript\jquery\demos\functional\css\base.css" />
+    <Content Include="Javascript\jquery\demos\functional\css\chilli-recipes.css" />
+    <Content Include="Javascript\jquery\demos\functional\css\functional_demos.css" />
+    <Content Include="Javascript\jquery\demos\functional\images\ajax-loader.gif" />
+    <Content Include="Javascript\jquery\demos\functional\images\body_bg.jpg" />
+    <Content Include="Javascript\jquery\demos\functional\images\body_bg.png" />
+    <Content Include="Javascript\jquery\demos\functional\images\content_bg.png" />
+    <Content Include="Javascript\jquery\demos\functional\images\content_body_bg.png" />
+    <Content Include="Javascript\jquery\demos\functional\images\content_top_bg.png" />
+    <Content Include="Javascript\jquery\demos\functional\images\dot.png" />
+    <Content Include="Javascript\jquery\demos\functional\images\favicon.ico" />
+    <Content Include="Javascript\jquery\demos\functional\images\footer_bg.png" />
+    <Content Include="Javascript\jquery\demos\functional\images\functional-demo-face.png" />
+    <Content Include="Javascript\jquery\demos\functional\images\html_bg.png" />
+    <Content Include="Javascript\jquery\demos\functional\images\icon_liferay.gif" />
+    <Content Include="Javascript\jquery\demos\functional\images\logo.gif" />
+    <Content Include="Javascript\jquery\demos\functional\index.html" />
+    <Content Include="Javascript\jquery\demos\functional\js\beautify.js" />
+    <Content Include="Javascript\jquery\demos\functional\js\behaviour.functionaldemos.js" />
+    <Content Include="Javascript\jquery\demos\functional\js\behaviour.js" />
+    <Content Include="Javascript\jquery\demos\functional\js\chili-recipes.js" />
+    <Content Include="Javascript\jquery\demos\functional\js\functional.demo.js" />
+    <Content Include="Javascript\jquery\demos\functional\js\jquery.chili.pack.js" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\ar.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\au.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\br.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\calendar.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\cn.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\id.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\ie.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\ke.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\lb.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\nz.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010020.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010036.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010039.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010044.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010050.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010055.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010058.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010059.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010061.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\P1010063.JPG" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\puppy.jpg" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\se.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\us.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\images\za.gif" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.accordion.data.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.accordion.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.datepicker.dbd.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.datepicker.dlg.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.datepicker.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.datepicker.sel.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.datepicker.two.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.dialog.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.draggable.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.droppable.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.droppable.photos.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.effects.easing.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.effects.general.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.effects.showhide.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.resizable.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.selectable.data.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.selectable.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.slider.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.sortable.ex1.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.sortable.ex3.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.sortable.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.tabs.ex1.html" />
+    <Content Include="Javascript\jquery\demos\functional\templates\ui.tabs.html" />
+    <Content Include="Javascript\jquery\demos\real-world\accordion-drawers\images\caps.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\accordion-drawers\images\sideboxlight_bg.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\accordion-drawers\images\slider_handlebg.png" />
+    <Content Include="Javascript\jquery\demos\real-world\accordion-drawers\index.html" />
+    <Content Include="Javascript\jquery\demos\real-world\effects\demo.js" />
+    <Content Include="Javascript\jquery\demos\real-world\effects\index.html" />
+    <Content Include="Javascript\jquery\demos\real-world\effects\style.css" />
+    <Content Include="Javascript\jquery\demos\real-world\image-cropper\img\img01.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\image-cropper\img\img02.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\image-cropper\img\img03.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\image-cropper\img\img04.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\image-cropper\img\img05.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\image-cropper\index.html" />
+    <Content Include="Javascript\jquery\demos\real-world\image-cropper\real-world.css" />
+    <Content Include="Javascript\jquery\demos\real-world\layout\demo.css" />
+    <Content Include="Javascript\jquery\demos\real-world\layout\demo.js" />
+    <Content Include="Javascript\jquery\demos\real-world\layout\index.html" />
+    <Content Include="Javascript\jquery\demos\real-world\layout\loader.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\layout\loader_bg.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010020.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010036.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010039.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010044.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010050.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010055.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010058.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010059.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010061.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\P1010063.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010020.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010036.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010039.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010044.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010050.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010055.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010058.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010059.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010061.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\img\thumbs\P1010063.JPG" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\index.html" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\js\demo.js" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\js\jquery.blockUI.js" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\js\jquery.livequery.js" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\theme\css\screen.css" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\theme\img\body_wrap_bg.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\theme\img\header_bg.png" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\theme\img\photos_gold_32.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\theme\img\search_16.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\theme\img\side_top.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\photo-manager\theme\img\trash_16.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_airport_express.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_airport_extreme.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_aperture20080212.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_apple_remote_desktop_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_cinema_display20071026.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_dot_mac_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_final_cut_express_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_final_cut_studio2_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_ilife_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_imac20071026.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_iwork_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_keyboards20070807.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_logic_express_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_logic_studio_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_macbook20071026.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_macbookair_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_macbook_pro20071026.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_macosx_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_macosx_server20071016.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_mac_mini.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_mac_pro_20070622.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_mighty_mouse.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_quicktime.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_shake_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_timecapsule_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_xsan_20080115.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_xserve.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\pb_xserve_raid.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\productbrowser_background_20070622.jpg" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\productbrowser_scrollbar_20070622.png" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\images\productbrowser_scroller_20080115.png" />
+    <Content Include="Javascript\jquery\demos\real-world\product-slider\index.html" />
+    <Content Include="Javascript\jquery\demos\real-world\range-interface\index.html" />
+    <Content Include="Javascript\jquery\demos\real-world\splitpane\css\demo.css" />
+    <Content Include="Javascript\jquery\demos\real-world\splitpane\images\bg_gradient.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\splitpane\images\icons_2.png" />
+    <Content Include="Javascript\jquery\demos\real-world\splitpane\images\splitpane_handle-ew.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\splitpane\images\splitpane_handle-sn.gif" />
+    <Content Include="Javascript\jquery\demos\real-world\splitpane\index.html" />
+    <Content Include="Javascript\jquery\jquery.js" />
+    <Content Include="Javascript\jquery\tests\accordion.html" />
+    <Content Include="Javascript\jquery\tests\accordion.js" />
+    <Content Include="Javascript\jquery\tests\all.html" />
+    <Content Include="Javascript\jquery\tests\datepicker.html" />
+    <Content Include="Javascript\jquery\tests\datepicker.js" />
+    <Content Include="Javascript\jquery\tests\dialog.html" />
+    <Content Include="Javascript\jquery\tests\dialog.js" />
+    <Content Include="Javascript\jquery\tests\draggable.html" />
+    <Content Include="Javascript\jquery\tests\draggable.js" />
+    <Content Include="Javascript\jquery\tests\images\test.jpg" />
+    <Content Include="Javascript\jquery\tests\qunit\testrunner.js" />
+    <Content Include="Javascript\jquery\tests\qunit\testsuite.css" />
+    <Content Include="Javascript\jquery\tests\resizable.html" />
+    <Content Include="Javascript\jquery\tests\resizable.js" />
+    <Content Include="Javascript\jquery\tests\selectable.html" />
+    <Content Include="Javascript\jquery\tests\selectable.js" />
+    <Content Include="Javascript\jquery\tests\simulate\jquery.simulate.js" />
+    <Content Include="Javascript\jquery\tests\slider.html" />
+    <Content Include="Javascript\jquery\tests\slider.js" />
+    <Content Include="Javascript\jquery\tests\sortable.html" />
+    <Content Include="Javascript\jquery\tests\sortable.js" />
+    <Content Include="Javascript\jquery\tests\visual\all.css" />
+    <Content Include="Javascript\jquery\tests\visual\all.html" />
+    <Content Include="Javascript\jquery\tests\visual\datepicker.html" />
+    <Content Include="Javascript\jquery\tests\visual\dialog.html" />
+    <Content Include="Javascript\jquery\tests\visual\draggable.handle.html" />
+    <Content Include="Javascript\jquery\tests\visual\draggable.html" />
+    <Content Include="Javascript\jquery\tests\visual\droppable.html" />
+    <Content Include="Javascript\jquery\tests\visual\effects.all.css" />
+    <Content Include="Javascript\jquery\tests\visual\effects.all.html" />
+    <Content Include="Javascript\jquery\tests\visual\effects.all.js" />
+    <Content Include="Javascript\jquery\tests\visual\resizable.html" />
+    <Content Include="Javascript\jquery\tests\visual\selectable.html" />
+    <Content Include="Javascript\jquery\tests\visual\slider.html" />
+    <Content Include="Javascript\jquery\tests\visual\sortable.html" />
+    <Content Include="Javascript\jquery\tests\visual\sortable_massive_scale.html" />
+    <Content Include="Javascript\jquery\themes\flora\flora.accordion.css" />
+    <Content Include="Javascript\jquery\themes\flora\flora.all.css" />
+    <Content Include="Javascript\jquery\themes\flora\flora.css" />
+    <Content Include="Javascript\jquery\themes\flora\flora.datepicker.css" />
+    <Content Include="Javascript\jquery\themes\flora\flora.dialog.css" />
+    <Content Include="Javascript\jquery\themes\flora\flora.resizable.css" />
+    <Content Include="Javascript\jquery\themes\flora\flora.slider.css" />
+    <Content Include="Javascript\jquery\themes\flora\flora.tabs.css" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-left-act.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-left-over.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-left.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-middle-act.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-middle-over.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-middle.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-right-act.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-right-over.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\accordion-right.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-e.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-n.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-ne.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-nw.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-s.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-se.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-sw.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-title.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-titlebar-close-hover.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-titlebar-close.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\dialog-w.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\resizable-e.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\resizable-n.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\resizable-ne.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\resizable-nw.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\resizable-s.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\resizable-se.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\resizable-sw.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\resizable-w.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\slider-bg-1.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\slider-bg-2.png" />
+    <Content Include="Javascript\jquery\themes\flora\i\slider-handle.gif" />
+    <Content Include="Javascript\jquery\themes\flora\i\tabs.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Javascript\jquery\themes\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.accordion.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.all.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.base.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.core.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.datepicker.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.dialog.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.progressbar.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.resizable.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.slider.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.tabs.css" />
+    <Content Include="Javascript\jquery\themes\redmond\ui.theme.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.accordion.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.all.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.base.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.core.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.datepicker.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.dialog.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.progressbar.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.resizable.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.slider.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.tabs.css" />
+    <Content Include="Javascript\jquery\themes\smoothness\ui.theme.css" />
+    <Content Include="Javascript\jquery\themes\ui.datepicker.css" />
+    <Content Include="Javascript\jquery\ui\jquery.ui.all.js" />
+    <Content Include="Javascript\rounded.js" />
+    <Content Include="ManageUsers\AddUser.aspx" />
+    <Content Include="ManageUsers\DeleteUser.aspx" />
+    <Content Include="ManageUsers\EditPassword.aspx" />
+    <Content Include="ManageUsers\EditUser.aspx" />
+    <Content Include="ManageUsers\ManageUsersMenuPage.aspx" />
+    <Content Include="ManageUsers\User.ascx" />
+    <Content Include="People\DeletePerson.aspx" />
+    <Content Include="People\Person.aspx" />
+    <Content Include="SearchForms\SearchMenu.aspx" />
+    <Content Include="Topbar.ascx" />
+    <Content Include="Util.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\RecentActivity.aspx" />
+    <Content Include="Views\Home\ForgotPassword.aspx" />
+    <Content Include="Views\Shared\Site.master" />
+    <Content Include="Javascript\jquery\jquery.corner.js" />
+    <Content Include="About.aspx" />
+    <Content Include="SearchForms\ListVolunteers.aspx" />
+    <Content Include="Add\AddVolunteer.aspx" />
+    <Content Include="Volunteer\Volunteer.aspx" />
+    <Content Include="SearchForms\ListEvents.aspx" />
+    <Content Include="Event\Event.aspx" />
+    <Content Include="Add\AddEvent.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add\AddMenu.aspx.cs">
+      <DependentUpon>AddMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add\AddMenu.aspx.designer.cs">
+      <DependentUpon>AddMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add\AddTopBar.ascx.cs">
+      <DependentUpon>AddTopBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add\AddTopBar.ascx.designer.cs">
+      <DependentUpon>AddTopBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Add\SuccessfulAdd.aspx.cs">
+      <DependentUpon>SuccessfulAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\DisableControls.cs" />
+    <Compile Include="AppCode\EditDistance.cs" />
+    <Compile Include="AppCode\PasswordGenerator\AlphaNumericPasswordGenerator.cs" />
+    <Compile Include="AppCode\PasswordGenerator\PhoneticPasswordGenerator.cs" />
+    <Compile Include="Add\SuccessfulAdd.aspx.designer.cs">
+      <DependentUpon>SuccessfulAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\Contact.cs" />
+    <Compile Include="AppCode\CreateDatabaseAndUser.cs" />
+    <Compile Include="AppCode\CreateMenu.cs" />
+    <Compile Include="AppCode\DatabaseSettings.cs" />
+    <Compile Include="AppCode\Link.cs" />
+    <Compile Include="AppCode\NumberToEnglish.cs" />
+    <Compile Include="AppCode\Sanitize.cs" />
+    <Compile Include="AppCode\SendEmail.cs" />
+    <Compile Include="AppCode\SimpleDateParser.cs" />
+    <Compile Include="AppCode\SQLiteProfileProvider.cs" />
+    <Compile Include="AppCode\SQLiteMembershipProvider.cs" />
+    <Compile Include="AppCode\SQLiteRoleProvider.cs" />
+    <Compile Include="BaseMaster.master.cs">
+      <DependentUpon>BaseMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseMaster.master.designer.cs">
+      <DependentUpon>BaseMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="BottomBar.ascx.cs">
+      <DependentUpon>BottomBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BottomBar.ascx.designer.cs">
+      <DependentUpon>BottomBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarControl\CalendarControl.ascx.cs">
+      <DependentUpon>CalendarControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalendarControl\CalendarControl.ascx.designer.cs">
+      <DependentUpon>CalendarControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUsers\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers\DeleteUser.aspx.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUsers\DeleteUser.aspx.designer.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers\EditPassword.aspx.cs">
+      <DependentUpon>EditPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUsers\EditPassword.aspx.designer.cs">
+      <DependentUpon>EditPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUsers\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers\ManageUsersMenuPage.aspx.cs">
+      <DependentUpon>ManageUsersMenuPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUsers\ManageUsersMenuPage.aspx.designer.cs">
+      <DependentUpon>ManageUsersMenuPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers\User.ascx.cs">
+      <DependentUpon>User.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUsers\User.ascx.designer.cs">
+      <DependentUpon>User.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="People\DeletePerson.aspx.cs">
+      <DependentUpon>DeletePerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="People\DeletePerson.aspx.designer.cs">
+      <DependentUpon>DeletePerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="People\Person.aspx.cs">
+      <DependentUpon>Person.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="People\Person.aspx.designer.cs">
+      <DependentUpon>Person.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonControl.ascx.cs">
+      <DependentUpon>PersonControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonControl.ascx.designer.cs">
+      <DependentUpon>PersonControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForms\SearchMenu.aspx.cs">
+      <DependentUpon>SearchMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchForms\SearchMenu.aspx.designer.cs">
+      <DependentUpon>SearchMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topbar.ascx.cs">
+      <DependentUpon>Topbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topbar.ascx.designer.cs">
+      <DependentUpon>Topbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Views\Home\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\RecentActivity.aspx.designer.cs">
+      <DependentUpon>RecentActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\RecentActivity.aspx.cs">
+      <DependentUpon>RecentActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Site.master.designer.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForms\ListVolunteers.aspx.cs">
+      <DependentUpon>ListVolunteers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForms\ListVolunteers.aspx.designer.cs">
+      <DependentUpon>ListVolunteers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add\AddVolunteer.aspx.cs">
+      <DependentUpon>AddVolunteer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add\AddVolunteer.aspx.designer.cs">
+      <DependentUpon>AddVolunteer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteer\Volunteer.aspx.cs">
+      <DependentUpon>Volunteer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteer\Volunteer.aspx.designer.cs">
+      <DependentUpon>Volunteer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForms\ListEvents.aspx.cs">
+      <DependentUpon>ListEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForms\ListEvents.aspx.designer.cs">
+      <DependentUpon>ListEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Event.aspx.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Event.aspx.designer.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add\AddEvent.aspx.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add\AddEvent.aspx.designer.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AppCode\fckmail.bat" />
+    <None Include="AppCode\fckmail.sh" />
+    <None Include="App_Data\Database.db" />
+    <None Include="App_Data\Documents\384" />
+    <None Include="App_Data\Documents\386" />
+    <None Include="App_Data\Documents\399" />
+    <None Include="App_Data\ExpenseBudgets\080e8a86-bcd6-48a7-aeff-154014101497" />
+    <None Include="App_Data\ExpenseBudgets\1e987766-4117-4dfe-8187-59bd5f76fb20" />
+    <None Include="App_Data\ExpenseBudgets\2886801f-7c55-40a0-b96d-13f39daa349b" />
+    <None Include="App_Data\ExpenseBudgets\28c6c5f4-2d35-4127-b626-5242e61058c9" />
+    <None Include="App_Data\ExpenseBudgets\31d1a6f5-c9c0-4402-8b4c-8912ce1a68ff" />
+    <None Include="App_Data\ExpenseBudgets\353b2009-8015-4045-b097-d091ad3ba08f" />
+    <None Include="App_Data\ExpenseBudgets\52e5552c-263b-45bf-9733-72762d7c03f7" />
+    <None Include="App_Data\ExpenseBudgets\7abbc5c8-0d5e-483b-8aa7-006153ca7d88" />
+    <None Include="App_Data\ExpenseBudgets\7ceda642-8b67-489e-af10-ec426b0f38ed" />
+    <None Include="App_Data\ExpenseBudgets\9458e1c2-ce0d-4e23-a099-56d6483392fe" />
+    <None Include="App_Data\ExpenseBudgets\9842d890-4cd1-406e-98cf-490998e4f9ca" />
+    <None Include="App_Data\ExpenseBudgets\9f8a4fc3-53ff-449c-9245-408f92a27383" />
+    <None Include="App_Data\ExpenseBudgets\b8a68dba-5923-4387-a090-1de7389444c0" />
+    <None Include="App_Data\ExpenseBudgets\bd5c43a3-e869-4ac6-b5ae-d9e89acd5699" />
+    <None Include="App_Data\ExpenseBudgets\ec65ebde-3846-4ee9-8125-79fee6971802" />
+    <None Include="App_Data\ExpenseBudgets\ef250b36-4ed2-4984-bf2a-cf6381afb3b7" />
+    <None Include="App_Data\ExpenseBudgets\fc499367-c735-4ff8-ab00-4d45fce57ab8" />
+    <None Include="App_Data\NoticeTemplates\PayAdditionalRentNoticeTemplate.rtf" />
+    <None Include="App_Data\NoticeTemplates\PayAdditionalRentNoticeTemplate.tem" />
+    <None Include="App_Data\NoticeTemplates\PayRentNoticeTemplate.rtf" />
+    <None Include="App_Data\NoticeTemplates\PayRentNoticeTemplate.tem" />
+    <None Include="App_Data\NoticeTemplates\PayRentNoticeTemplate.tem~" />
+    <None Include="App_Data\Tmp\05 July Report.pdf" />
+    <None Include="App_Data\Tmp\RentRoll.csv" />
+    <None Include="App_Data\Tmp\RentRoll.pdf" />
+    <None Include="App_Data\Users.db" />
+    <None Include="Javascript\dojo\cldr\LICENSE" />
+    <None Include="Javascript\dojo\cldr\README" />
+    <None Include="Javascript\dojo\LICENSE" />
+    <None Include="Javascript\dojo\resources\LICENSE" />
+    <None Include="Javascript\dojo\_firebug\LICENSE" />
+    <None Include="Javascript\flot\TODO" />
+    <None Include="Javascript\jquery\demos\functional\images\Thumbs.db" />
+    <None Include="Javascript\jquery\demos\functional\templates\ui.tabs.php" />
+    <None Include="Javascript\jquery\themes\flora\i\Thumbs.db" />
+    <None Include="robots.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50041</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="true" VerifyCodeBehindEvents="true">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Volunteer\" />
+    <Folder Include="Event\" />
+  </ItemGroup>
+</Project>

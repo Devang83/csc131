@@ -1,0 +1,15 @@
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\quickpm\QuickPM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\quickpmwebsite\QuickPMWebsite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\quickpmwebsite\QuickPMWebsite\bin\QuickPMWebsite.dll
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\quickpmwebsite\QuickPMWebsite\bin\QuickPMWebsite.pdb
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\quickpmwebsite\QuickPMWebsite\bin\QuickPM.dll
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\quickpmwebsite\QuickPMWebsite\bin\QuickPM.pdb
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\quickpmwebsite\QuickPMWebsite\obj\Debug\QuickPMWebsite.dll
+C:\Users\Bryan\Documents\Visual Studio 2008\Projects\quickpmwebsite\QuickPMWebsite\obj\Debug\QuickPMWebsite.pdb
+C:\cygwin\home\Bryan\PropertyManagement\quickpmwebsite\QuickPMWebsite\bin\QuickPMWebsite.dll
+C:\cygwin\home\Bryan\PropertyManagement\quickpmwebsite\QuickPMWebsite\bin\QuickPMWebsite.pdb
+C:\cygwin\home\Bryan\PropertyManagement\quickpmwebsite\QuickPMWebsite\bin\QuickPM.dll
+C:\cygwin\home\Bryan\PropertyManagement\quickpmwebsite\QuickPMWebsite\bin\QuickPM.pdb
+C:\cygwin\home\Bryan\PropertyManagement\quickpmwebsite\QuickPMWebsite\obj\Debug\ResolveAssemblyReference.cache
+C:\cygwin\home\Bryan\PropertyManagement\quickpmwebsite\QuickPMWebsite\obj\Debug\QuickPMWebsite.dll
+C:\cygwin\home\Bryan\PropertyManagement\quickpmwebsite\QuickPMWebsite\obj\Debug\QuickPMWebsite.pdb

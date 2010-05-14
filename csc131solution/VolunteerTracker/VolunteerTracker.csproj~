@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85CCE2AE-E9B8-4736-94DC-8AE7CC09573D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuickPM</RootNamespace>
+    <AssemblyName>QuickPM</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Mono.Data">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <Package>hyena.data.sqlite</Package>
+    </Reference>
+    <Reference Include="Npgsql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveRecord.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Exceptions\ARRecordException.cs" />
+    <Compile Include="Exceptions\CenterException.cs" />
+    <Compile Include="Exceptions\RemitInfoException.cs" />
+    <Compile Include="Period.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Verify.cs" />
+    <Compile Include="DatabaseConnectors\DatabaseType.cs" />
+    <Compile Include="DatabaseConnectors\DatabaseAccess.cs" />
+    <Compile Include="DatabaseConnectors\SQLite.cs" />
+    <Compile Include="DatabaseConnectors\ManageDatabase.cs" />
+    <Compile Include="DatabaseConnectors\PSQL.cs" />
+    <Compile Include="CachedActiveRecord.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Volunteer.cs" />
+    <Compile Include="Attend.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio />
+  </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="DatabaseConnectors\" />
+  </ItemGroup>
+</Project>

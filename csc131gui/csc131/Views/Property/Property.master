@@ -1,0 +1,54 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="QuickPMWebsite.Views.Property.PropertyMaster" MasterPageFile="~/Views/Shared/Site.master" Codebehind="Property.master.cs" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <% string title = "Property Profile";
+    	if (ViewData["Id"] != null)
+       {
+       		long PropertyId = (long)ViewData["Id"];
+           QuickPM.Property p = new QuickPM.Property(PropertyId);           
+           title = "Property : " + p.Name + " (#" + p.Id + ")";
+           }
+           %> 
+    
+    <title><%= title %></title>
+    <script type="text/javascript" src="<%= ResolveUrl("~/Util.js") %>"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+	<% if (ViewData["Id"] != null)
+       {
+			long PropertyId = (long)ViewData["Id"];
+           QuickPM.Property p = new QuickPM.Property(PropertyId);           
+           
+           %> 
+    <b>Property</b> 
+    
+    <script type="text/javascript">
+    	function newUrl(location, selectControl) 
+    	{
+    		var u = location.href.replace("<%= GetCurrentPageName()+ "/" + p.Id %>", "<%= GetCurrentPageName()+ "/" %>" + selectControl.options[selectControl.selectedIndex].value);
+			return u;
+    	}
+    </script>
+    	   <a class="plain-directory" href="<%= ResolveClientUrl("~/Property/PropertyPage/" + PropertyId)%>">Main Property Page</a>
+    
+    <select onchange="location.href = newUrl(location, this)">
+    	<% 
+    	List<long> propertyIds = new List<long>(QuickPM.Util.GetPropertyIds());
+    	if (!propertyIds.Contains(p.Id)) {
+    		propertyIds.Add(p.Id);
+    	}
+    	foreach(long propertyId in propertyIds) { 
+    		QuickPM.Property property = new QuickPM.Property(propertyId);
+    	%>
+    		<% if (propertyId == p.Id) { %>
+    			<option selected="selected" value="<%= propertyId %>"><%= property.Name + " (#" + property.Id + ")" %></option>
+    		<% } else { %>
+    			<option value="<%= propertyId %>"><%= property.Name + " (#" + property.Id + ")" %></option>
+    		<% } %>
+    	<% } %>
+    </select>        
+	<% } %>
+        <div class="content">
+    <asp:ContentPlaceHolder ID="ChildMainContent" runat="server"></asp:ContentPlaceHolder>     
+    </div>
+    
+</asp:Content>

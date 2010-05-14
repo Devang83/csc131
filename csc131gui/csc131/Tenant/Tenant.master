@@ -1,0 +1,23 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="Tenant_MasterTenant" MasterPageFile="~/BaseMaster.master" Codebehind="Tenant.master.cs" %>
+<%@ Register TagPrefix="uc" TagName="TenantTabs" Src="~/Tenant/TenantTabs.ascx" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <% QuickPM.Tenant tenant = null;       
+       if (Request["TenantId"] != null)
+       {
+           tenant = new QuickPM.Tenant(Request["TenantId"]);                 
+       }
+        %>
+        <% if(tenant != null){ %>    
+    <title>Tenant : <%=  tenant.Name %> (#<%= tenant.TenantId%>)</title>
+    <% } %>
+    <script type="text/javascript" src="<%= ResolveUrl("~/Util.js") %>"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+    <uc:TenantTabs ID="TenantTabs" runat="server" />
+    <div class="content">
+    <asp:ContentPlaceHolder ID="ChildMainContent" runat="server"></asp:ContentPlaceHolder>     
+    </div>
+</asp:Content>

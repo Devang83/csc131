@@ -1,0 +1,98 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore>
+      <Breakpoint file="/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/Controllers/BillingAJAXController.cs" line="14" />
+      <Breakpoint file="/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/Public/Maps/Map.aspx" line="0" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuickPMWebsite/Tenant/AR.aspx" ctype="Workbench">
+    <Files>
+      <File FileName="QuickPMWebsite/AppCode/PropertyPdfReport.cs" Line="74" Column="57" />
+      <File FileName="QuickPMWebsite/Reports/Print.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Reports/PropertyMonthlyReport.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Reports/PropertyMonthlyReport.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Reports/PropertyReportControl.ascx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Reports/PropertyReportControl.ascx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/AppCode/Reports.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/AppCode/PrintTenantBilling.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/AppCode/TenantLedgerPdfReport.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/AppCode/CashJournalPdfReport.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/CashJournal/CashJournalControl.ascx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/CashJournal/CashJournalControl.ascx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/CashJournal/Printable.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Default.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Public/Default.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Public/Maps/MapControl.ascx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/CashJournal/Printable.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Billings/BillingsControl.ascx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Billings/BillingsControl.ascx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Billings/DownloadBillings.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Billings/DownloadBillings.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/AppCode/SQLiteProfileProvider.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/ManageUsers/EditUser.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/ManageUsers/EditPassword.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/ManageUsers/EditPassword.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Default.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Public/BottomBar.ascx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Public/BaseMaster.master" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Login.ascx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Billings/View.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Billings/BillingChanges.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/SendBill.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/SendBill.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/LeaseTerms.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/AppCode/PrintBillings.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/LeaseTerms.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/LeaseTerms.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/Notifications.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/Notifications.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/Insurance.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/Insurance.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/Insurance.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/AR.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/AR.aspx" Line="75" Column="9" />
+      <File FileName="QuickPMWebsite/Tenant/Reports/ReceivedChecks.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/Reports/ReceivedChecks.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/AppCode/RentRoll.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Property/ReconciliationAndBudget/Budget.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Reports/Property/RentRoll.ascx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Reports/Property/CashFlowIncome.ascx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/AppCode/ContactInformationCsv.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Controllers/PropertyController.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Property/Reports/ReportsMenu.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Property/Reports/ReportsMenu.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Property/Tenants.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Public/Property/Tenants.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Tenant/TenantTabs.ascx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Views/Tenants/Tenant.master" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/WorkOrders/WorkOrderControl.ascx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/CashJournal/AddingDeposit.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/SearchForms/FindChecks.aspx" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/SearchForms/FindChecks.aspx.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Global.asax.cs" Line="1" Column="1" />
+      <File FileName="QuickPMWebsite/Add/AddProperty.aspx" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="QuickPMWebsite" expanded="True">
+            <Node name="Tenant" expanded="True">
+              <Node name="AR.aspx" expanded="True" selected="True" />
+            </Node>
+            <Node name="Global.asax" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

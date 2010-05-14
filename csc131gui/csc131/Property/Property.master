@@ -1,0 +1,40 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="Property_Property" MasterPageFile="~/BaseMaster.master" Codebehind="Property.master.cs" %>
+<%@ Register TagPrefix="uc" TagName="PropertyTabs" Src="~/Property/PropertyTabs.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <% QuickPM.Property property = null;
+       long number;
+       if (Request["PropertyId"] != null)
+       {
+           if (long.TryParse(Request["PropertyId"], out number))
+           {
+               property = new QuickPM.Property(number);      
+           }
+       }
+        %>
+        <% if(property != null){ %>    
+    <title>Property : <%=  property.Name %> (#<%= property.Id%>)</title>
+    <% } %>
+    
+    <script type="text/javascript" src="<%= ResolveUrl("~/Util.js") %>"></script>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <% QuickPM.Property property = null;
+       int number;
+       if (Request["PropertyId"] != null)
+       {
+           if (Int32.TryParse(Request["PropertyId"], out number))
+           {
+               property = new QuickPM.Property(number);      
+           }
+       }
+        %>
+        <% if(property != null){ %>
+    <%= property.Name%> (#<%= property.Id %>)
+    <% } %>
+    <uc:PropertyTabs ID="PropertyTabs" runat="server" /> 
+    <div class="content">
+    <asp:ContentPlaceHolder ID="ChildMainContent" runat="server"></asp:ContentPlaceHolder>     
+    </div>
+</asp:Content>
+

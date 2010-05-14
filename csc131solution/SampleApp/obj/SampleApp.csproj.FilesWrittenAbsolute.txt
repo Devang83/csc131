@@ -1,0 +1,8 @@
+/home/bjwbell/PropertyManagement/quickpmsolution/SampleApp/bin/Debug/QuickPM.dll
+/home/bjwbell/PropertyManagement/quickpmsolution/SampleApp/bin/Debug/QuickPM.dll.mdb
+/home/bjwbell/PropertyManagement/quickpmsolution/SampleApp/bin/Debug/Mono.Data.Sqlite.dll
+/home/bjwbell/PropertyManagement/quickpmsolution/SampleApp/bin/Debug/app.config
+/home/bjwbell/PropertyManagement/quickpmsolution/SampleApp/bin/Debug/SampleApp.exe.mdb
+/home/bjwbell/PropertyManagement/quickpmsolution/SampleApp/bin/Debug/SampleApp.exe
+/home/bjwbell/PropertyManagement/quickpmsolution/SampleApp/obj/Debug/SampleApp.exe
+/home/bjwbell/PropertyManagement/quickpmsolution/SampleApp/obj/Debug/SampleApp.exe.mdb
