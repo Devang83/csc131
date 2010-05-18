@@ -26,8 +26,13 @@ namespace QuickPMWebsite
 			v.HomePhone = HomePhone.Text.Trim();
 			v.LastName = LastName.Text.Trim();
 			v.OfficePhone = OfficePhone.Text.Trim();
+			v.Ethnicity = Ethnicity.Text.Trim();
+			v.Employer = Employer.Text.Trim();
+			v.JobTitle = JobTitle.Text.Trim();
+			v.Male = (Male.Text.Trim().ToLower() == "m") ? 1 : 0;
+			v.Interests = new System.Collections.Generic.List<string>();
 			v.Save();
-			message = "<font color=\"red\">Volunteer Added</font>";
+			message = "<font color=\"red\">Volunteer Added <br/> Go to <a href=\"../Volunteer/Volunteer.aspx?Id=" + v.Id + "\">volunteer</a></font>";
 		}
 	}
 }

@@ -26,6 +26,12 @@ public class Event : VolunteerTracker.ActiveRecord
 			set;
 		}
 		
+		public string Notes
+		{
+			get;
+			set;
+		}
+		
         private void SetDefaults() 
         {
             Name = "";            

@@ -69,6 +69,12 @@ namespace VolunteerTracker
 			{
 				return "LeaseOptionSummaries";
 			}
+			
+			if (noun == "Attend")
+			{
+				return "Attendance";
+			}
+			
             return noun + "s";
         }
 

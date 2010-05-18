@@ -17,7 +17,7 @@ namespace SampleApp
 			DatabaseAccess.SetDatabaseType(new SQLite());
 			
 			ManageDatabase md = new ManageDatabase("", "volunteertracker.db", "", "");
-			//md.CreateDatabase();
+		    //md.CreateDatabase();
 			md.RecreateTables();
 			
 			Database.SetConnectionString(Database.CreateConnectionString("", "volunteertracker.db", "", ""));
@@ -30,7 +30,16 @@ namespace SampleApp
 			v.HomePhone = "";
 			v.OfficePhone = "";			
 			v.Email = "";
+			v.Employer = "";
+			v.Ethnicity = "";
+			v.JobTitle = "";
+			v.Birthday = new DateTime();
+			v.Male = 0;			
 			v.Save();
+			
+			
+			List<VolunteerTracker.Volunteer> vs = VolunteerTracker.Volunteer.Find<VolunteerTracker.Volunteer>();
+			
 			
 			/*Database.RecordExists<Property>(new Property(0));
 			long[] propIds = QuickPM.Util.GetPropertyIds(true);

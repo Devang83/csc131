@@ -38,6 +38,11 @@
                 <a class="button-link" href="<%= ResolveUrl("~/Add/AddVolunteer.aspx") %>">Add Volunteer</a>                        
                 </td>                
                 </tr>
+                <tr>
+                <td>
+                <a class="button-link" href="<%= ResolveUrl("~/SearchForms/FindVolunteers.aspx") %>">Find Volunteers</a>
+                </td>
+                </tr>
                 </table>
         </div>
         
@@ -88,8 +93,31 @@
     	
     </div>
     </div>
+    
     <div style="height:300px"> 
     </div>
+    <script type="text/javascript">    	    	
+    	$(document).ready(function () {       	
+    		$("#calendar").load("/Home/Events/-1", {}, function (responseText, textStatus, XMLHttpRequest) {
+  				//Rounded('highlight2', 16, 16);
+			});
+						
+    	
+    	});    	
+    </script>
+    
+    
+    <div style="height:100px"> 
+    </div>
+    
+    <div id="calendar" class="highlight" style="width:800px;margin-left:auto;margin-right:auto;">
+    	
+    </div>
+    
+    <div style="height:100px"> 
+    </div>
+    
+    
     <script type="text/javascript">    	    	
     	$(document).ready(function () {       	
     		$("#recentactivity").load("/Home/RecentActivity/-1", {}, function (responseText, textStatus, XMLHttpRequest) {

@@ -6,38 +6,46 @@
       <Breakpoint file="/home/bjwbell/PropertyManagement/quickpmwebsite/QuickPMWebsite/Public/Maps/Map.aspx" line="0" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="csc131/Views/Home/RecentActivity.aspx.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="csc131/SearchForms/FindVolunteers.aspx" ctype="Workbench">
     <Files>
-      <File FileName="csc131/SearchForms/SearchMenu.aspx" Line="1" Column="1" />
-      <File FileName="csc131/ManageUsers/User.ascx.cs" Line="110" Column="10" />
-      <File FileName="csc131/Views/Home/RecentActivity.aspx.cs" Line="20" Column="24" />
-      <File FileName="csc131/Web.config" Line="34" Column="17" />
-      <File FileName="csc131/AppCode/DatabaseSettings.cs" Line="51" Column="4" />
-      <File FileName="csc131/SearchForms/ListVolunteers.aspx" Line="11" Column="8" />
-      <File FileName="csc131/SearchForms/ListVolunteers.aspx.cs" Line="12" Column="3" />
-      <File FileName="csc131/Add/AddVolunteer.aspx" Line="31" Column="93" />
-      <File FileName="csc131/Add/AddVolunteer.aspx.cs" Line="31" Column="4" />
-      <File FileName="csc131/Add/SuccessfulAdd.aspx.cs" Line="19" Column="6" />
+      <File FileName="csc131/SearchForms/SearchMenu.aspx" Line="17" Column="41" />
+      <File FileName="csc131/ManageUsers/User.ascx.cs" Line="1" Column="1" />
+      <File FileName="csc131/Views/Home/RecentActivity.aspx.cs" Line="1" Column="1" />
+      <File FileName="csc131/Web.config" Line="1" Column="1" />
+      <File FileName="csc131/AppCode/DatabaseSettings.cs" Line="1" Column="1" />
+      <File FileName="csc131/SearchForms/ListVolunteers.aspx" Line="12" Column="1" />
+      <File FileName="csc131/SearchForms/ListVolunteers.aspx.cs" Line="1" Column="1" />
+      <File FileName="csc131/Add/AddVolunteer.aspx" Line="1" Column="1" />
+      <File FileName="csc131/Add/AddVolunteer.aspx.cs" Line="1" Column="1" />
+      <File FileName="csc131/Add/SuccessfulAdd.aspx.cs" Line="1" Column="1" />
       <File FileName="csc131/People/DeletePerson.aspx.cs" Line="1" Column="1" />
-      <File FileName="csc131/ManageUsers/AddUser.aspx.cs" Line="27" Column="5" />
-      <File FileName="csc131/Add/AddVolunteer.aspx.designer.cs" Line="43" Column="1" />
-      <File FileName="csc131/ManageUsers/AddUser.aspx.designer.cs" Line="21" Column="58" />
-      <File FileName="csc131/Default.aspx" Line="35" Column="106" />
-      <File FileName="csc131/Volunteer/Volunteer.aspx" Line="31" Column="96" />
-      <File FileName="csc131/Volunteer/Volunteer.aspx.cs" Line="34" Column="68" />
-      <File FileName="csc131/Volunteer/Volunteer.aspx.designer.cs" Line="35" Column="3" />
-      <File FileName="csc131/BaseMaster.master.cs" Line="18" Column="107" />
+      <File FileName="csc131/ManageUsers/AddUser.aspx.cs" Line="1" Column="1" />
+      <File FileName="csc131/Add/AddVolunteer.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="csc131/ManageUsers/AddUser.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="csc131/Default.aspx" Line="110" Column="25" />
+      <File FileName="csc131/Volunteer/Volunteer.aspx" Line="24" Column="63" />
+      <File FileName="csc131/Volunteer/Volunteer.aspx.cs" Line="68" Column="38" />
+      <File FileName="csc131/Volunteer/Volunteer.aspx.designer.cs" Line="39" Column="55" />
+      <File FileName="csc131/BaseMaster.master.cs" Line="1" Column="1" />
       <File FileName="csc131/AppCode/CreateDatabaseAndUser.cs" Line="1" Column="1" />
-      <File FileName="csc131/ManageUsers/User.ascx" Line="49" Column="8" />
+      <File FileName="csc131/ManageUsers/User.ascx" Line="1" Column="1" />
       <File FileName="csc131/Views/Home/RecentActivity.aspx" Line="1" Column="1" />
-      <File FileName="csc131/SearchForms/ListEvents.aspx" Line="11" Column="8" />
+      <File FileName="csc131/SearchForms/ListEvents.aspx" Line="1" Column="1" />
       <File FileName="csc131/SearchForms/ListEvents.aspx.cs" Line="1" Column="1" />
-      <File FileName="csc131/Event/Event.aspx" Line="6" Column="1" />
-      <File FileName="csc131/Event/Event.aspx.cs" Line="13" Column="55" />
-      <File FileName="csc131/Event/Event.aspx.designer.cs" Line="28" Column="57" />
-      <File FileName="csc131/Add/AddEvent.aspx" Line="16" Column="96" />
-      <File FileName="csc131/Add/AddEvent.aspx.cs" Line="25" Column="17" />
-      <File FileName="csc131/Add/AddEvent.aspx.designer.cs" Line="33" Column="1" />
+      <File FileName="csc131/Event/Event.aspx" Line="1" Column="1" />
+      <File FileName="csc131/Event/Event.aspx.cs" Line="87" Column="3" />
+      <File FileName="csc131/Event/Event.aspx.designer.cs" Line="37" Column="3" />
+      <File FileName="csc131/Add/AddEvent.aspx" Line="1" Column="1" />
+      <File FileName="csc131/Add/AddEvent.aspx.cs" Line="1" Column="1" />
+      <File FileName="csc131/Add/AddEvent.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="csc131/Event/EventMenu.aspx" Line="1" Column="1" />
+      <File FileName="csc131/Volunteer/VolunteerMenu.aspx" Line="8" Column="50" />
+      <File FileName="csc131/Views/Home/Events.aspx" Line="11" Column="43" />
+      <File FileName="csc131/Views/Home/ForgotPassword.aspx" Line="1" Column="1" />
+      <File FileName="csc131/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="csc131/SearchForms/FindVolunteers.aspx" Line="31" Column="24" />
+      <File FileName="csc131/SearchForms/FindVolunteers.aspx.cs" Line="14" Column="10" />
+      <File FileName="csc131/SearchForms/FindVolunteers.aspx.designer.cs" Line="35" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -46,17 +54,20 @@
             <Node name="References" expanded="True" />
             <Node name="Add" expanded="True">
               <Node name="AddEvent.aspx" expanded="True" />
+              <Node name="AddVolunteer.aspx" expanded="True" />
             </Node>
+            <Node name="Controllers" expanded="True" />
             <Node name="Event" expanded="True">
               <Node name="Event.aspx" expanded="True" />
             </Node>
-            <Node name="SearchForms" expanded="True" />
+            <Node name="SearchForms" expanded="True">
+              <Node name="FindVolunteers.aspx" expanded="True" selected="True" />
+            </Node>
             <Node name="Views" expanded="True">
               <Node name="Home" expanded="True">
-                <Node name="RecentActivity.aspx" expanded="True">
-                  <Node name="RecentActivity.aspx.cs" selected="True" />
-                </Node>
+                <Node name="RecentActivity.aspx" expanded="True" />
               </Node>
+              <Node name="Shared" expanded="True" />
             </Node>
             <Node name="Volunteer" expanded="True">
               <Node name="Volunteer.aspx" expanded="True" />

@@ -8,6 +8,37 @@ namespace VolunteerTracker
 	public class Attend : ActiveRecord
 	{
 
+		
+		public long EventId 
+		{
+			get;
+			set;
+		}
+		
+		public long VolunteerId
+		{
+			get;
+			set;
+		}
+		
+		public long Hours 
+		{
+			get;
+			set;
+		}
+		
+		public long Minutes 
+		{
+			get;
+			set;
+		}
+		
+		public string Notes 
+		{
+			get;
+			set;
+		}
+		
 		public Attend () : base()
 		{
 			

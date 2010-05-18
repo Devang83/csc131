@@ -613,6 +613,10 @@
     <Content Include="SearchForms\ListEvents.aspx" />
     <Content Include="Event\Event.aspx" />
     <Content Include="Add\AddEvent.aspx" />
+    <Content Include="Event\EventMenu.aspx" />
+    <Content Include="Volunteer\VolunteerMenu.aspx" />
+    <Content Include="Views\Home\Events.aspx" />
+    <Content Include="SearchForms\FindVolunteers.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Add\AddMenu.aspx.cs">
@@ -841,6 +845,12 @@
     </Compile>
     <Compile Include="Add\AddEvent.aspx.designer.cs">
       <DependentUpon>AddEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForms\FindVolunteers.aspx.cs">
+      <DependentUpon>FindVolunteers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForms\FindVolunteers.aspx.designer.cs">
+      <DependentUpon>FindVolunteers.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

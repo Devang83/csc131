@@ -292,9 +292,10 @@ namespace VolunteerTracker
                                 		pInfo.SetValue(record, null, null);
                             		}
                             		else
-                            		{																																								
+                            		{			
+										
 										//.......................................................................................................................................			
-										pInfo.SetValue(record, obj, null);															
+										pInfo.SetValue(record, obj, null);											
                             		}
                         		}
                     		}

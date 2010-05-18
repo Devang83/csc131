@@ -33,6 +33,13 @@ namespace QuickPMWebsite {
 		
 		protected System.Web.UI.WebControls.Button ButtonSave;
 		
+		protected System.Web.UI.WebControls.Button ButtonDelete;
+		
+		protected System.Web.UI.WebControls.TextBox Interest;
+		protected System.Web.UI.WebControls.TextBox Employer;
+		
+		protected System.Web.UI.WebControls.Button ButtonAddInterest;
+		
 		public new BaseMaster Master {
 			get {
 				return ((BaseMaster)(base.Master));

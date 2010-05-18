@@ -11,31 +11,19 @@
 namespace QuickPMWebsite {
 	
 	
-	public partial class AddVolunteer {
+	public partial class FindVolunteers {
 		
 		protected System.Web.UI.WebControls.Content headContent;
 		
 		protected System.Web.UI.WebControls.Content MainContentContent;
 		
-		protected System.Web.UI.WebControls.TextBox FirstName;
+		protected System.Web.UI.WebControls.TextBox Name;
 		
-		protected System.Web.UI.WebControls.TextBox LastName;
-		
-		protected System.Web.UI.WebControls.TextBox Email;
-		
-		protected System.Web.UI.WebControls.TextBox CellPhone;
-		
-		protected System.Web.UI.WebControls.TextBox OfficePhone;
-		
-		protected System.Web.UI.WebControls.TextBox HomePhone;
-		
-		protected System.Web.UI.WebControls.TextBox Address;
-		protected System.Web.UI.WebControls.TextBox Ethnicity;
 		protected System.Web.UI.WebControls.TextBox Employer;
-		protected System.Web.UI.WebControls.TextBox JobTitle;
-		protected System.Web.UI.WebControls.TextBox Male;
 		
-		protected System.Web.UI.WebControls.Button ButtonAdd;
+		protected System.Web.UI.WebControls.TextBox Interest;
+		
+		protected System.Web.UI.WebControls.Button Search;
 		
 		public new BaseMaster Master {
 			get {

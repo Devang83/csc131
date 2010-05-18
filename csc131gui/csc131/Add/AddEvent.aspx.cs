@@ -23,8 +23,10 @@ namespace QuickPMWebsite
 			e.Name = Name.Text.Trim();
 			e.Date = DateTime.Parse(Date.Text);
 			e.Email = "";
+			e.Notes = "";
 			e.Save();
-			message = "<font color=\"red\">Saved</font>";
+			//message = "<font color=\"red\">Saved</font>";
+			Response.Redirect("../Event/Event.aspx?Id=" + e.Id);
 		}
 	}
 }

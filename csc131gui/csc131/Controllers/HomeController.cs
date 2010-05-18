@@ -25,6 +25,18 @@ namespace QuickPMWebsite.Controllers
             return View();
         }
 		
+		public ActionResult Events()
+        {
+            ViewData["Message"] = "This is ASP.NET MVC!";
+			
+			
+			List<VolunteerTracker.Event> events = VolunteerTracker.Event.Find<VolunteerTracker.Event>();
+			events.Sort((e1, e2) => e1.Date.CompareTo(e2.Date));
+			events = events.FindAll( e => (e.Date >= DateTime.Today));
+			ViewData["Events"] = events;
+            return View();
+        }
+		
 		public ActionResult ForgotPassword()
 		{
 			return View();

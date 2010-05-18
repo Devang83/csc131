@@ -45,10 +45,11 @@
     <Reference Include="Mono.Data">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="Mono.Data.Sqlite">
-      <Package>hyena.data.sqlite</Package>
-    </Reference>
     <Reference Include="Npgsql" />
+    <Reference Include="Mono.Data.Sqlite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SampleApp\bin\Debug\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActiveRecord.cs" />

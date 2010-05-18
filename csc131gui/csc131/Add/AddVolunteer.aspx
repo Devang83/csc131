@@ -27,6 +27,20 @@
 <tr>
 <td>Address</td> <td><asp:TextBox runat="server" Id="Address"></asp:TextBox></td>
 </tr>
+<tr>
+<td>Ethnicity</td> <td><asp:TextBox runat="server" Id="Ethnicity"></asp:TextBox></td>
+</tr>
+<tr>
+<td>Employer</td> <td><asp:TextBox runat="server" Id="Employer"></asp:TextBox></td>
+</tr>
+<tr>
+<td>Job Title</td> <td><asp:TextBox runat="server" Id="JobTitle"></asp:TextBox></td>
+</tr>
+<tr>
+<td>M/F</td> <td><asp:TextBox runat="server" Id="Male"></asp:TextBox></td>
+</tr>
+
+
 </table>
 <asp:Button runat="server" Text="Add" Id="ButtonAdd" OnClick="ButtonAdd_Click"></asp:Button>
 </asp:Content>

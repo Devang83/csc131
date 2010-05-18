@@ -101,6 +101,7 @@ namespace VolunteerTracker
             ModifiedDate        " + dbType.GetDbColumnType(typeof(DateTime)) + @" not null,
 			ModifiedBy          " + dbType.GetDbColumnType(typeof(long))   + @" not null,            
             Name                " + dbType.GetDbColumnType(typeof(string)) + @" not null,
+			Notes                " + dbType.GetDbColumnType(typeof(string)) + @" not null,
 			Date                " + dbType.GetDbColumnType(typeof(DateTime)) + @" not null,
             Email               " + dbType.GetDbColumnType(typeof(string)) + @" not null,
             ACL                 " + dbType.GetDbColumnType(typeof(string)) + @" not null -- access control list, contains a list of VolunteerTracker.User.Id's and their access level
@@ -121,6 +122,12 @@ namespace VolunteerTracker
 			CellPhone           " + dbType.GetDbColumnType(typeof(string)) + @" not null,
 			HomePhone           " + dbType.GetDbColumnType(typeof(string)) + @" not null,
 			OfficePhone         " + dbType.GetDbColumnType(typeof(string)) + @" not null,
+			Male                " + dbType.GetDbColumnType(typeof(int)) + @" not null,
+			Employer            " + dbType.GetDbColumnType(typeof(string)) + @" not null,		
+			JobTitle            " + dbType.GetDbColumnType(typeof(string)) + @" not null,		
+			Ethnicity           " + dbType.GetDbColumnType(typeof(string)) + @" not null,		
+			Birthday            " + dbType.GetDbColumnType(typeof(DateTime)) + @" not null,							
+			Interests           " + dbType.GetDbColumnType(typeof(string)) + @" not null,							
             ACL                 " + dbType.GetDbColumnType(typeof(string)) + @" not null -- access control list, contains a list of VolunteerTracker.User.Id's and their access level
             )";
             databaseAccess.ExecuteNonQuery(createString);
@@ -132,8 +139,11 @@ namespace VolunteerTracker
             CreatedDate         " + dbType.GetDbColumnType(typeof(DateTime)) + @" not null,
             ModifiedDate        " + dbType.GetDbColumnType(typeof(DateTime)) + @" not null,
 			ModifiedBy          " + dbType.GetDbColumnType(typeof(long))   + @" not null,            
-            VolunteerId           " + dbType.GetDbColumnType(typeof(int)) + @" not null,
+            VolunteerId         " + dbType.GetDbColumnType(typeof(int)) + @" not null,
 			EventId            " + dbType.GetDbColumnType(typeof(int)) + @" not null,
+			Hours              " + dbType.GetDbColumnType(typeof(long))   + @" not null,            
+            Minutes            " + dbType.GetDbColumnType(typeof(long))   + @" not null,            
+			Notes              " + dbType.GetDbColumnType(typeof(string)) + @" not null, 							
             ACL                 " + dbType.GetDbColumnType(typeof(string)) + @" not null -- access control list, contains a list of VolunteerTracker.User.Id's and their access level
             )";
             databaseAccess.ExecuteNonQuery(createString);            

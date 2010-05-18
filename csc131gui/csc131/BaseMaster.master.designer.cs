@@ -16,7 +16,7 @@ public partial class BaseMaster {
 	
 	protected System.Web.UI.HtmlControls.HtmlForm basemasterform;
 	
-	protected BottomBar topbar;
+	protected TopbarControl topbar;
 	
 	protected System.Web.UI.WebControls.ContentPlaceHolder MainContent;
 	

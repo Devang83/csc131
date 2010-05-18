@@ -3,24 +3,29 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="VolunteerTracker/Event.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VolunteerTracker/Volunteer.cs" ctype="Workbench">
     <Files>
-      <File FileName="SampleApp/Program.cs" Line="21" Column="11" />
-      <File FileName="VolunteerTracker/DatabaseConnectors/ManageDatabase.cs" Line="104" Column="66" />
-      <File FileName="VolunteerTracker/DatabaseConnectors/SQLite.cs" Line="35" Column="5" />
-      <File FileName="VolunteerTracker/DatabaseConnectors/DatabaseAccess.cs" Line="49" Column="5" />
-      <File FileName="VolunteerTracker/Volunteer.cs" Line="49" Column="8" />
-      <File FileName="VolunteerTracker/Event.cs" Line="26" Column="8" />
+      <File FileName="Assembly Browser" />
+      <File FileName="SampleApp/Program.cs" Line="35" Column="11" />
+      <File FileName="VolunteerTracker/DatabaseConnectors/ManageDatabase.cs" Line="127" Column="15" />
+      <File FileName="VolunteerTracker/DatabaseConnectors/SQLite.cs" Line="1" Column="1" />
+      <File FileName="VolunteerTracker/DatabaseConnectors/DatabaseAccess.cs" Line="1" Column="1" />
+      <File FileName="VolunteerTracker/Volunteer.cs" Line="124" Column="14" />
+      <File FileName="VolunteerTracker/Event.cs" Line="31" Column="8" />
+      <File FileName="VolunteerTracker/Attend.cs" Line="12" Column="1" />
+      <File FileName="VolunteerTracker/ActiveRecord.cs" Line="1" Column="1" />
+      <File FileName="VolunteerTracker/DatabaseConnectors/DatabaseType.cs" Line="1" Column="1" />
+      <File FileName="VolunteerTracker/Util.cs" Line="74" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="SampleApp" expanded="True">
+          <Node name="SampleApp" expanded="True" selected="True">
             <Node name="References" expanded="True" />
           </Node>
           <Node name="VolunteerTracker" expanded="True">
+            <Node name="References" expanded="True" />
             <Node name="DatabaseConnectors" expanded="True" />
-            <Node name="Event.cs" selected="True" />
           </Node>
         </State>
       </Pad>
